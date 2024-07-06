@@ -92,6 +92,7 @@ a {
 :root {
   --bg-dark-green: #1b3936;
   --text-bg-green: #75ff69;
+  --text-green: #678784;
 }
 body {
   /* background-image: url(/img/bg.png); */
@@ -194,7 +195,6 @@ nav ul {
   margin-top: 40px;
 }
 .info-right {
-  /* width: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -206,4 +206,40 @@ nav ul {
 .flex {
   display: flex;
   align-items: last baseline;
+}
+
+/* tree section */
+.tree img {
+  width: 100%;
+}
+
+/* about us */
+.about-us {
+  width: 95%;
+  margin: 0 auto;
+  height: 100vh;
+  background: url("/img/about-camera.jpg") right 1% no-repeat,
+    url("/img/about-swing.jpg") left 7% no-repeat,
+    url("/img/about-travel.jpg") right bottom no-repeat,
+    url("/img/about-lake.jpg") left 90% no-repeat;
+
+  text-align: center;
+}
+.about-us h4 {
+  color: var(--text-bg-green);
+  margin-top: 100px;
+}
+.about-us-text {
+  width: 800px;
+  margin: 0 auto;
+  color: var(--text-green);
+  font-size: 48px;
+  text-transform: capitalize;
+}
+.text-white {
+  color: white;
+}
+/* rooms section */
+.rooms {
+  background-color: white;
 }
