@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* CSS Reset */
 
 /* Remove default margins and paddings */
@@ -58,8 +60,6 @@ a {
 /* reset ends */
 
 /* fonts */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
   font-family: "avenir";
@@ -252,15 +252,18 @@ nav ul {
   padding-left: 100px;
   color: var(--text-green);
   font-size: 42px;
+  font-weight: 400;
   width: 550px;
 }
+
 .rooms-images {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  /* gap: 15px; */
-  /* width: 90%; */
   margin: 50px auto;
+}
+.room-image {
+  width: 100%;
 }
 .room1,
 .room2,
@@ -273,12 +276,18 @@ nav ul {
   top: 70%;
   left: 15%;
   color: white;
+  font-size: 22px;
+}
+.room2-details {
+  position: absolute;
+  top: 75%;
+  left: 15%;
 }
 .room2-text {
   display: flex;
-  position: absolute;
-  top: 80%;
-  left: 15%;
+  justify-content: center;
+  gap: 250px;
+  align-items: center;
   color: white;
 }
 .room2-text h2 {
@@ -286,4 +295,13 @@ nav ul {
 }
 .room2-text div {
   width: 300px;
+}
+.room1 {
+  width: 25%;
+}
+.room2 {
+  width: 45%;
+}
+.room3 {
+  width: 25%;
 }
