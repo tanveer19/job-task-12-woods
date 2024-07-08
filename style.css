@@ -158,6 +158,7 @@ nav ul {
 }
 
 .play-btn {
+  color: #75ff69;
   background-color: #1b3936;
   position: absolute;
   top: 45%;
@@ -441,11 +442,9 @@ input[type="submit"] {
 .about {
   display: flex;
   height: 200px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.about div {
-  width: 33%;
-}
+
 .about-text {
   background-color: var(--text-bg-green);
 }
@@ -458,8 +457,9 @@ input[type="submit"] {
 .about-text,
 .room-text,
 .contact-text {
+  width: 33%;
+
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
