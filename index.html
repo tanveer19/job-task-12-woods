@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Woods</title>
-    <script
-      src="https://kit.fontawesome.com/c5b8b41db0.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="swiper-bundle.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -162,16 +159,62 @@
       </form>
     </section>
     <section class="testimonial">
-      <h1>Experience the Magic of The Wilderness Retreat</h1>
-      <p>
-        Welcome to our cosy cabin in the woods! Our rental home, nestled in the
-        heart of the forest.
-      </p>
-      <h3>peaceful</h3>
-      <p>
-        "We had such a wonderful time at The Wilderness Retreat. The cabin was
-        cozy and co...
-      </p>
+      <div class="testimonial-text">
+        <h1 class="font-boska">
+          Experience the Magic of The Wilderness Retreat
+        </h1>
+        <p class="font-switzer">
+          Welcome to our cosy cabin in the woods! Our rental home, nestled in
+          the heart of the forest.
+        </p>
+      </div>
+      <!-- slider -->
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/slider1.jpg" alt="" />
+            <div class="slider-text font-avenir">
+              ✌️
+              <h3>Peaceful</h3>
+              <p class="fade-out-text">
+                "We had such a wonderful time at The Wilderness Retreat. The
+                cabin was cozy and co...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/slider2.jpg" alt="" />
+            <div class="slider-text font-avenir">
+              ✌️
+              <h3>Peaceful</h3>
+              <p class="fade-out-text">
+                "We had such a wonderful time at The Wilderness Retreat. The
+                cabin was cozy and co...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/slider3.jpg" alt="" />
+            <div class="slider-text font-avenir">
+              ✌️
+              <h3>Peaceful</h3>
+              <p class="fade-out-text">
+                "We had such a wonderful time at The Wilderness Retreat. The
+                cabin was cozy and co...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-btn">
+          <div class="swiper-button-prev">
+            <img src="/img/l-arrow.png" alt="" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="/img/r-arrow.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -208,6 +251,23 @@
       </div>
     </footer>
 
-    <!-- <script type="module" src="/main.js"></script> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/c5b8b41db0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
