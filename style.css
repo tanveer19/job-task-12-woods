@@ -355,6 +355,7 @@ input[type="submit"] {
 .testimonial-text p {
   width: 350px;
 }
+
 /* slider */
 
 .swiper {
@@ -397,8 +398,8 @@ input[type="submit"] {
 .swiper-button-next,
 .swiper-button-prev {
   background-color: var(--bg-dark-green);
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -417,4 +418,58 @@ input[type="submit"] {
 }
 .swiper-btn img {
   margin: 5px;
+}
+/* time section */
+.time-text h1 {
+  margin-bottom: 25px;
+  width: 420px;
+  color: var(--text-green);
+  font-size: 42px;
+  font-weight: 400;
+}
+.talk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 70% / 70%;
+  margin-top: 150px;
+}
+/* footer */
+.about {
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+}
+.about div {
+  width: 33%;
+}
+.about-text {
+  background-color: var(--text-bg-green);
+}
+.change {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.about-text,
+.room-text,
+.contact-text {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.room-text,
+.contact-text {
+  color: white;
+}
+.about-text img,
+.room-text img,
+.contact-text img {
+  width: 40px;
+  margin-top: 40px;
 }
